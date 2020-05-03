@@ -1,42 +1,64 @@
 = 你好，Vert.x！
 
-* Vert.x 4.0 Milestone
+* Vert.x 4.0.0 Milestone-4
 
-== 看出来的问题
+== 体会
 
-人手还是不足。
+* Vert.x 不是大而全的框架，不要指望要啥有啥
+
+* 不要去追求它的边缘功能，只用它最着力的
+
+* 先了解响应式的理念，再上手会快很多
+
+* 文档当然有用，但 Vert.x 也是可以直接看例子来玩的
+** https://github.com/vert-x3/vertx-examples
+** 样例中不乏“更好的糙快猛”、“先解决有无，同时尽量兜底”的气质，不失为一种工程哲学
+
+== 评价
+
+* 有一种恍惚感：如果仅从达到目的来考虑，为什么不用 Go 呢？
+
+* 作为一个开源项目，发展有些年头了，却还是能看出来人手不足
+
+一处细节：
+
 即便是 Milestone 版本，Starter 指定的 Kotlin 还是 1.3.20（现在已经到了 1.3.72）；
 而 Maven Wrapper 还是 0.5.3 （新的是 0.5.6）和 Maven 3.6.0（新的是 3.6.3）。
-这种问题在另一个开源项目 Micronaut 中也存在。
-这类依赖项更新，只要还是依靠确定版本号（而不是自动更新），就只能不断地填人力。
+这类问题在另一个开源项目 Micronaut 中也存在。
+
+依赖项更新属于体力活，只要还是依靠确定版本号（而不是自动更新），就只能不断地填人力。
 而 Spring 因为参与者众多，能够（稍微更好地）照顾好这些细节。
 
-当然我也不是光BB，写完这个之后我就给 vertx-starter 提交了 PR。
+当然我也不是光BB，写完这个之后我马上就给 vertx-starter 提交了 PR。
 
----
+'''
 
 以下为原自述文件内容：
-
-image:https://img.shields.io/badge/vert.x-4.0.0-milestone4-purple.svg[link="https://vertx.io"]
 
 This application was generated using http://start.vertx.io
 
 == Building
 
 To launch your tests:
-```
+
+[source,sh]
+----
 ./mvnw clean test
-```
+----
 
 To package your application:
-```
+
+[source,sh]
+----
 ./mvnw clean package
-```
+----
 
 To run your application:
-```
+
+[source,sh]
+----
 ./mvnw clean compile exec:java
-```
+----
 
 == Help
 
@@ -44,5 +66,3 @@ To run your application:
 * https://stackoverflow.com/questions/tagged/vert.x?sort=newest&pageSize=15[Vert.x Stack Overflow]
 * https://groups.google.com/forum/?fromgroups#!forum/vertx[Vert.x User Group]
 * https://gitter.im/eclipse-vertx/vertx-users[Vert.x Gitter]
-
-
